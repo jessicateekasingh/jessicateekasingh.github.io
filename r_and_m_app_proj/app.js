@@ -5,6 +5,8 @@
 
 
 $(() => {
+  const $container = $('.container')
+
   //grabbing elements
   const $openBtn = $('#openModal')
   const $modal = $('#modal');
@@ -41,7 +43,11 @@ $(() => {
     }
     ).then((info) => {
       console.log(info);
-      $('#mortyIMG').attr('src', info.image)
+      $('#IMG').attr('src', info.image)
+      $container.append($('#IMG'))
+
+      $('.image2').text(info.name)
+      $container.append($('.image2'))
     })
     .catch((err) => {
       console.log(err);
