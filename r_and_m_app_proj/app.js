@@ -47,7 +47,9 @@ $(() => {
       $container.append($('#IMG'))
 
       $('.image2').text(info.name)
+      $('.image3').text(info.status)
       $container.append($('.image2'))
+      // ($('.image3')).append($('.image2'))
     })
     .catch((err) => {
       console.log(err);
