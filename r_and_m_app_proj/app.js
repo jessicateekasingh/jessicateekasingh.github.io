@@ -19,7 +19,7 @@ $(() => {
   }
 
   //event listeners
-  setTimeout(openModal, 1000);
+  setTimeout(openModal, 500);
   $closeBtn.on('click', closeModal)
 
 
@@ -41,6 +41,7 @@ $(() => {
     }
     ).then((info) => {
       console.log(info);
+      $('#mortyIMG').attr('src', info.image)
     })
     .catch((err) => {
       console.log(err);

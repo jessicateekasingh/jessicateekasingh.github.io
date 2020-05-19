@@ -1,6 +1,9 @@
+
+
 .container{
   display: flex;
   justify-content: center;
+  border-radius: 2px solid black;
 }
 
 #modal{
@@ -75,4 +78,9 @@ h1{
   background-color: #ADFF2F;
   border-color: #FFFF00;
   border-width: thick;
+}
+
+.image1{
+  display: flex;
+  justify-content: flex-start;
 }
