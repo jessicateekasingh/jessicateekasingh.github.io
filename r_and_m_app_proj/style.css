@@ -1,25 +1,54 @@
-html{
-  background: url("image/r_m_bg.png") no-repeat;
+body{
+  background: url("image/r_m_bg.png");
+  background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   background-color: white;
-  margin-left: 120px;
   width: 80%;
   height: 350px;
-  border-radius: 4px solid black;
+  border-radius: 2px;
   border: 2px solid black;
+  margin: 0 auto;
 }
 
-.container > img{
-  margin-left: 20%;
+.data{
+  width: 20%;
+  margin: 20px;
 }
 
-.container > button{
-  display: flex;
+#IMG{
+  margin-top: 20px;
+  width: 100%;
+  height: 250px;
+}
+
+.image1{
+  width: 30%;
+}
+
+.image2{
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 2px 2px 0px #00ff00;
+}
+
+.image3{
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 2px 2px 0px #FF0000;
+}
+
+.location{
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 2px 2px 0px #FF0000;
+}
+
+.sidebar{
+  width: 30%;
+  overflow: none;
 }
 
 #modal{
@@ -30,7 +59,7 @@ html{
   height: 100%;
   width: 100%;
   z-index: 1;
-  overflow: auto;
+  overflow: hidden;
   display: none;
 }
 
@@ -75,25 +104,28 @@ html{
   border-width: thin;
 }
 
-h1{
+#title{
   color: white;
   display: flex;
   justify-content: center;
   font-family: 'Permanent Marker', cursive;
   font-size: 60px;
+  text-shadow: 2px 2px 0px #00ff00;
 }
 
 .button{
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   font-family: 'Permanent Marker', cursive;
   font-size: 15px;
   border-radius: 25px;
   height: 70px;
   width: 100px;
   border-width: medium;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px;
   margin-top: 30px;
+  margin-left: 30px; */
+  margin: 10px;
   cursor: pointer;
 }
 
@@ -102,28 +134,4 @@ h1{
   background-color: #ADFF2F;
   border-color: #FFFF00;
   border-width: thick;
-}
-
-.image1{
-  display: flex;
-  justify-content: flex-start;
-  width: 50%;
-  height: 50%
-}
-
-.image2{
-  margin-top: 20%;
-  margin-right: 20%;
-  margin-bottom: 20%;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 35px;
-  width: 80%
-}
-
-.image3{
-  display: flex;
-  flex-direction: row;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 20px;
-  width: 50%;
 }

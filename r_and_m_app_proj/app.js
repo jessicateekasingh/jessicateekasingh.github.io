@@ -44,12 +44,15 @@ $(() => {
     ).then((info) => {
       console.log(info);
       $('#IMG').attr('src', info.image)
-      $container.append($('#IMG'))
+    
+
+      $('.image3').text(info.status)
+
 
       $('.image2').text(info.name)
-      $('.image3').text(info.status)
-      $container.append($('.image2'))
-      // ($('.image3')).append($('.image2'))
+
+
+      $('.location').text(info.location.name)
     })
     .catch((err) => {
       console.log(err);
