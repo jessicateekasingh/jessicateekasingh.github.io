@@ -44,7 +44,7 @@ $(() => {
     ).then((info) => {
       console.log(info);
       $('#IMG').attr('src', info.image)
-    
+
 
       $('.image3').text(info.status)
 
@@ -53,6 +53,7 @@ $(() => {
 
 
       $('.location').text(info.location.name)
+
     })
     .catch((err) => {
       console.log(err);
